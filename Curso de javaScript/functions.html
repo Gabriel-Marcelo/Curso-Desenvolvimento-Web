@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Functions</title>
+		
+
+	</head>
+	<body>
+	
+		<!--function nomeDaFuncao(nota1, nota2, nota3){
+				return (nota1+nota2+nota3)/3;
+			}
+
+			nomeDaFuncao();
+
+				var pessoa = {
+				nome: "Keven Jesus",
+				idade: 24,
+				profissao: 'professor',
+				cidade: 'sp'
+			};
+
+			function novaPessoa(nome,idade,profissao,cidade){
+				pessoa.nome = nome;
+				pessoa.idade = idade;
+				pessoa.profissao = profissao;
+				pessoa.cidade = cidade;
+			}
+
+			function novaPessoa(valor){
+				pessoa = valor;
+				return pessoa;
+			}
+			
+			Chamando no console:
+				novaPessoa({nome: 'gabriel', idade: 21, profissao: 'desempregado', cidade: 'acre'})
+
+
+			-->	
+		
+		<script>
+
+			var pessoa = {
+				nome: "Keven Jesus",
+				idade: 24,
+				profissao: 'professor',
+				cidade: 'sp'
+			};
+
+			function novaPessoa(valor){
+				if(typeof valor == 'object'){
+					pessoa = valor;
+					return true;
+				}
+				else{
+					return false;
+				}
+			}
+
+			function testaparametros(){
+				console.log(arguments);
+				return true;
+			}
+
+		</script>
+
+
+		
+	</body>
+
+
+</html>

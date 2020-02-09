@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DOM - Variáveis</title>
+		
+
+	</head>
+	<body>
+
+		<!--Let: é uma declarativa que serve para especificar dentro de uma função que a variável criada é local
+		Se vc declarar uma variável dentro de uma função sem nenhuma declarativa(var ou let), a linguagem irá entender que a variável é global, então após o termino da função ela continuará instanciada na memória e poderá ser imprimida na tela.
+		--Const: uma declarativa que serve para criar-se contantes("variáveis" que não podem ser mudadas)
+		-->
+
+		
+
+		
+		<script>
+
+			
+			const name="Keven";
+			//name = "rafael";//vai dar erro, pois estou tentando alterar uma constante
+			function teste(){
+
+				nome="gabriel";
+				
+			}
+
+			teste();
+
+			console.log(name);
+			console.log(nome);
+
+		</script>
+
+
+		
+	</body>
+
+
+</html>

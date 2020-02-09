@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<!--Na classe container pode-se colocar display:table ou float:left;
+	com margin 0 auto, não é necessário usar float:left;
+	A classe clearfix serve para a div pai aparecer caso de algum problema que faça ela desaparecer, como o uso dos floats
+	.clearfix{clear:both;}
+	O clearfix é utilizado apenas quando se utiliza float. Se o desenvolvivedor não quiser usar o clearfix, pode usar o pseudo-classe "before" e "after" do container
+	-->
+	<style>
+	
+		.container{background-color:red; width:500px; margin:0 auto;}
+		.box1{background-color:green; width:150px; height:150px; float:left;}
+		.box2{background-color:blue; width:150px; height:150px; float:right;}
+		
+		.container::before, .container::after{content:''; display:table;}
+		.container::after{clear:both;}
+	
+	</style>
+	
+</head>
+
+
+<body>
+
+	<div class="container">
+		
+		<div class="box1">
+		</div>
+		
+		<div class="box2">
+		</div>
+		
+		<!--
+		<div class="clearfix">
+		</div>
+		-->
+		
+	</div>
+
+</body>
+
+</html>

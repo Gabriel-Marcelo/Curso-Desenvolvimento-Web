@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Eventos - Keypress</title>
+		
+
+	</head>
+	<body>
+		
+
+		<!--	text.addEventListener("keypress", function(evento){
+				console.log(evento.keyCode);
+			})	
+			
+			teclaEnter: referente a tabela ascii
+		-->
+		<input type="text" id="text">
+		<div id="result" style="display: none">é o enter uhu</div>
+
+		
+		
+		<script>
+			
+			var text = document.getElementById("text");
+			var result = document.getElementById("result");
+
+			const teclaEnter = 13;
+
+			text.addEventListener("keypress", function(evento){
+				if(evento.keyCode == teclaEnter)
+					result.style.display = "block";
+			})			
+
+		</script>
+
+
+		
+	</body>
+
+
+</html>

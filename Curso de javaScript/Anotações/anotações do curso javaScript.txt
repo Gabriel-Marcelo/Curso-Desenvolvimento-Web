@@ -1,0 +1,3 @@
+ajax - enviar dados do navegador para o servidor sem atualizar a página
+dom-document object model - é onde fica os elementos html no javaScript
+diferença entre: ++20 e 20++

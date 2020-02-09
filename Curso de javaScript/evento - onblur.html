@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Eventos - onblur</title>
+		
+
+	</head>
+	<body>
+		
+		<!--O evento onblur refere-se a ação de sair com o mouse de uma caixa de texto
+
+			nome.addEventListener("blur", function(){
+				console.log("deu blur aqui");
+			})
+
+			sobrenome.addEventListener("blur", function(){
+				console.log("deu blur aqui também");
+			})			
+			
+			innerText: adiciona apenas texto ao elemento
+			innerHTML: adiciona qualquer elemento html ao outro elemento
+		-->
+		<input type="text" id="nome">
+		<input type="text" id="sobrenome">
+
+		<script>
+
+			var nome = document.getElementById("nome");
+			var sobrenome = document.getElementById("sobrenome");
+
+			nome.addEventListener("blur", function(){
+				sobrenome.value = this.value;
+			})
+
+					
+
+		</script>
+
+
+		
+	</body>
+
+
+</html>

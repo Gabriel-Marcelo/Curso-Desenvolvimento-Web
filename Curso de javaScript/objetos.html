@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DOM - Objetos</title>
+		
+
+	</head>
+	<body>
+
+	
+		
+		<script>
+
+			var carro={
+				placa: 'ADD-4423',
+				modelo: 'Sedã',
+				marca: 'Hyundai',
+				opcionais:{
+					cambio: 'aut.',
+					combustivel: 'flex',
+					extra:{
+						local: 'avenida',
+						estado: 'São-Paulo'
+					}
+				},
+				"outra-coisa": 'dsa'
+			};
+
+			console.log(carro["outra-coisa"]);
+			console.log(carro.opcionais.extra.estado);
+
+		</script>
+
+
+		
+	</body>
+
+
+</html>

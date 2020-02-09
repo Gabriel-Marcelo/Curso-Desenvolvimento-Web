@@ -1,0 +1,156 @@
+
+
+filter:blur(4px); - serve para desfocar a imagem
+filter:brightness(100%); - serve para adicionar brilho a imagem
+filter:contrast(100%) - serve para dar contraste;
+filter:grayscale(100%); - tons de cinza
+filter:invert(100%); - deixa a img fantasmagórica
+filter:opacity(50%) - aplicar transparência;
+filter:saturate(50%);
+filter:sepia(150%);
+hue-rotate(100deg) - muda as cores da imagem colocando outras aleatórias;
+drop-shadow(10px 20px 5px #000); - bota sombra na imagem
+
+img{margin:40px 0 0 60px; filter:drop-shadow(10px 20px 5px #000) contrast(150%);}
+
+
+Aula 29
+*{margin:0; padding:0;}
+nav{width:100vw; height:80px; background-color:blue;}
+vw:viewport width - serve para ocupar toda a tela, independente do dispositivo
+calc está servindo para subtrair 80 de altura da nav do banner, para assim tirar a barra de rolagem e se adaptar a todos os dispositivos(para deixar o tamanho da tela fixo)
+
+.banner{width:100vw; height:calc(100vh - 80px); background-image:url("../img/bg.jpg"); background-size:cover;}
+
+
+
+Aula 22
+body{color:blue; background:url(../img/iot.jpg) center center/100% 100% no-repeat fixed;}
+
+ background-image:url(../img/iot.jpg); background-repeat:no-repeat; background-attachment:fixed; background-size: 100% 100%;
+background-size: 300px 500px;
+background-attachment:fixed;(faz o background ficar fixo na tela quando a barra de rolagem é utilizada) - o valor padrão é o scroll
+background-color:red;      repeat-x:repetir na horizontal e y na vertical
+background-position:left bottom;(primeiro parametro: left, center ou right. segundo parametro:bottom, center ou top)
+
+
+
+
+Aula 21
+#exemplo{width:200px; height:200px; background-color:red; transition:all 2s linear;}
+transition: width 2s linear 1s, height 2s linear
+transition-property:width; transition-duration:2s; transition-timing-function:linear; transition-delay:2s;
+transition-timing-function: (pode ser: ease, ease-in, ease-out, ease-in-out)*/
+#exemplo:hover{width:350px; height:350px; background-color:green;}
+Hover é uma pseudo-classe que controla o estado do elemento quando é passado o mouse por cima
+
+
+Aula 20
+#exemplo{border-bottom:solid 5px red; outline:dotted 5px green;}
+A propriedade "outline" possui os mesmo valores da propriedade "border". Outline não trabalha com lados individuais
+border-left:solid 5px red;
+border-style:solid; border-width:5px; border-color:red;
+Tipos de border-style: dotted, dashed, solid, double, groove,ridge,inset,outset*/
+
+
+
+Aula 19
+#conteudo{width:600px; height:1200px; background-color:red; position:relative;}
+#texto{width:500px; background-color:green; position:fixed; left:20px; top:0;}
+Tipos de position: static(padrão), relative, absolute and fixed. Com a position absolute, o conteúto de uma div poderá ser posicionado em qualquer lugar da página.
+Logo, para o conteúdo permanecer dentro da div, a div pai precisa ter um "position: relative.". Ademais, o position:fixed serve para deixar o conteúdo fixo na página
+quando ela for "rolada" para cima ou para baixo.
+Com o valor "fixed" a div se posicionará de acordo com o navegador, não com a div pai
+
+
+
+Aula 18
+#base{background-color:green; width:600px; height:600px;}
+#esquerda{background-color:red; width:300px; height:300px; float:left;}
+#direita{background-color:blue; width:300px; height:300px; float:right;}
+
+
+
+
+Aula 17
+#cores{width:200px; height:200px; background:radial-gradient(red,green); }
+
+"rgb" significa red, green e blue(rgba é para indicar a opacidade no final) - background-color:rgba(230,89,225,0.5); - background-color:hsla(20,100%,59%,0.8);
+"hsla" também é para definir uma cor e opacidade
+background:linear-gradient(to top left,red,blue,green); linear-gradient serve para aplicar mais de uma cor ao mesmo tempo em uma div - background:linear-gradient(45deg,rgba(255,0,0,0),blue,green);
+80deg - ângulo
+radial-gradient é igual ao linear, mas a primeira cor fica no centro da div
+
+
+
+
+/*Assistir aula sobre o google fonts*/
+
+ *{font-size:100%;}
+p{font-size:2.5em; font-family:open-sans;}
+@font-face{
+	font-family:open-sans;
+	src: url(../opensans-regular-webfont.woff);
+}
+
+font-face serve para adicionar uma fonte externa para o site (fontsquirrel.com) - site para baixar fonts*/
+
+font-family:Times,"Times New Roman",serif; font-variant:small-caps; font-weight:bold; font-style:oblique;*/
+1em = 16px
+
+Aula 11
+#bloco{background-color:green; width:300px; height:150px; border-bottom-left-radius:20px}
+border-radius:20px 50px 100px 0px;(altere as bordas da div e as deixa redondas)*/
+
+Aula 10
+#conteudo{background-color:red; width:300px; height:70px; overflow:auto;}
+#conteudo p{opacity:0;}
+
+com o Overflow vc pode colocar uma barra de rolagem caso o conteúdo fique maior que a div ou vc pode esconder o conteúdo que
+ultrapassar a div. Já com a propriedade opacity, pode-se deixar o conteúdo transparente*/
+
+Aula 09
+*{box-sizing:border-box;}
+#conteudo{background-color:red; width:300px; padding:20px; box-shadow:10px 10px 5px green;}
+
+box-sizing serve para manter a div com o mesmo tamanho quando é aplicada a propriedade padding*/
+
+
+Aula 08
+p{color:red; text-align:justify; text-indent:20px; line-height:25px; direction:rtl; letter-spacing:2px; word-spacing:4px;}
+h1{text-align:left; text-decoration:underline; text-shadow:1px 3px 4px red;}
+h2{text-align:right; text-decoration:overline;}
+h3{text-align:center; text-decoration:line-through;}
+
+text-transform:capitalize(deixar primeira letra maiúscula)
+text-shadow:horizontal,vertical,desfoque(não obrigatório),cor da sombra*/
+
+Aula 07
+#exemplo{background-color:green; color:#fff; width:500px; height:200px; padding:10px 20px 30px 30px;}
+#exemplo2{background-color:red; color:#fff; width:500px; margin:20px 30px 20px 40px;}
+
+Aula 06
+#conteudo{min-width:500px; max-height:20px; background-color:green; color:#fff; padding:20px;}
+
+
+Aula 05
+.texto-principal{color:red; text-align:center;}
+.fundo-principal{background-color:green; padding:20px;}
+#conteudo{background-color:blue; padding:20px;}
+
+
+Aula 04
+h1,h2,p{color:red; text-align:center;}
+
+
+Aula 02 e 03
+*{margin:0; padding:0;}
+h1{color:blue; font-size:50px;}
+p{color:green; font-size:12px;}
+input[type="text"]{width:200px; background-color:#ccc; height:35px; border:none;}
+input[name="email"]{width:200px; background-color:#ccc; height:35px; border:none;}
+input[type="submit"]{width:50px; background-color:green; height:35px; border:none; cursor:pointer; color:#fff;}
+
+
+Aula 01
+h1{color:blue;font-size:60px;font-family:tahoma;}

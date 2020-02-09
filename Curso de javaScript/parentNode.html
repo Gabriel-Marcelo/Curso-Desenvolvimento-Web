@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DOM - parentNode</title>
+		
+
+	</head>
+	<body>
+
+		<!--parentNode: acessar o elemento pai de um elemento que vc acessou-->
+
+		<div id="linux">
+
+			<div class="ubuntu">
+
+				ubuntu
+
+				<div class="elementaryos">elementary OS</div>
+
+			</div>
+			
+			<div class="debian">Debian</div>
+
+		</div>
+
+	
+		<script>
+
+			console.log(
+
+				document.querySelector(".elementaryos").parentNode.parentNode.parentNode.parentNode
+
+			)
+	
+
+		</script>
+
+
+		
+	</body>
+
+
+</html>
